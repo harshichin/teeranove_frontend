@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl:"http://localhost:3300"
-  // baseUrl:"https://zany-pink-top-hat.cyclic.app"
+  // baseUrl:"http://localhost:3300"
+  baseUrl:"http://3.111.37.106:3300"
 };
 
 /*
