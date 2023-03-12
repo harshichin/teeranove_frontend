@@ -1,0 +1,391 @@
+<div class="boxed_wrapper ltr">
+  <!--Start breadcrumb area paroller-->
+  <section class="breadcrumb-area">
+    <div class="breadcrumb-area-bg" style="background-image: url(assets/images/breadcrumb/breadcrumb-1.jpg);">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="inner-content">
+            <div class="breadcrumb-menu" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+              <ul>
+                <li><a routerLink="/home">Home</a></li>
+                <li class="active">Contact Us</li>
+              </ul>
+            </div>
+
+            <div class="title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+              <h2>Contact Us</h2>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End breadcrumb area-->
+
+
+
+  <!--Start Google Map Style2 Area-->
+  <section class="google-map-area">
+    <div class="auto-container">
+      <div class="contact-page-map-outer">
+        <!--Map Canvas-->
+        <div class="map-canvas" data-icon-path="assets/images/icon/map-marker.png">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.3856461758182!2d77.43635761461093!3d12.88290579091409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae39016d163e23%3A0x19f6086cc8ee0fa8!2sTerranova%20Eco%20Management%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1670579661625!5m2!1sen!2sin"
+            allowfullscreen=true width="100%" height="675px" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <!-- <div class="map-canvas" data-zoom="12" data-lat="-37.817085" data-lng="144.955631" data-type="roadmap"
+          data-hue="#ffc400" data-title="Envato" data-icon-path="assets/images/icon/map-marker.png"
+          data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!--End Google Map Style2 Area-->
+
+
+
+  <!--Start Main Contact Form Area-->
+  <section class="main-contact-form-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6">
+          <div class="contact-info-box">
+            <div class="sec-title">
+              <div class="sub-title">
+                <h3>Get in Tocuh with us</h3>
+              </div>
+              <h2>Contact with the Team</h2>
+            </div>
+            <!-- <div class="text">
+              <p>Sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque <br> free porro
+                simply.</p>
+            </div> -->
+
+            <div class="contact-info-list">
+              <ul>
+                <li>
+                  <div class="icon">
+                    <span class="icon-telephone"></span>
+                  </div>
+
+                  <div class="text">
+                    <p>Have any questions?</p>
+                    <h4>Free: <a href="tel:18003093201">+18003093201</a></h4>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="icon">
+                    <span class="icon-email-1"></span>
+                  </div>
+
+                  <div class="text">
+                    <p>Write a email</p>
+                    <h4><a href="mailto:yourmail@email.com">info@terranova-eco.com</a></h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="icon-pin-1"></span>
+                  </div>
+
+                  <div class="text">
+                    <p>Visit our Registered office and Recycling Plant</p>
+                    <!-- <p style="color: black;">Registered office and Recycling Plant</p> -->
+                    <h4>Nelamangala- 562123, Bangalore, Karnataka</h4>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="icon-pin-1"></span>
+                  </div>
+
+                  <div class="text">
+                    <p>Visit our IT Repair and Refurbishment facility</p>
+                    <!-- <p style="color: black;">Registered office and Recycling Plant</p> -->
+                    <h4>Gerupalya, Kumbalagodu, Bengaluru, 560074</h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-xl-6 col-lg-6">
+          <div class="contact-form contact-form--style2">
+            <div class="sec-title">
+              <div class="sub-title">
+                <h3>Write Message</h3>
+              </div>
+              <h2>Send a Message</h2>
+            </div>
+
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" id="contact-form" name="contact_form"
+              class="default-form2" action="assets/inc/sendmail.php" method="post">
+              <div class="row">
+
+                <div class="col-xl-12">
+                  <div class="form-group">
+                    <div class="input-box">
+                      <input type="text" formControlName="fullName" name="form_name" id="formName"
+                        placeholder="Full Name*" required="">
+                        <span *ngIf="!contactForm.controls['fullName'].valid && contactForm.controls['fullName']?.touched">
+                          <p class="text-danger">Full Name is required</p>
+                        </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-12">
+                  <div class="form-group">
+                    <div class="input-box">
+                      <input type="email" formControlName="emailId" name="form_email" id="formEmail"
+                        placeholder="Email Address*" required="">
+                        <span *ngIf="!contactForm.controls['emailId'].valid && contactForm.controls['emailId']?.touched">
+                          <p class="text-danger">EmailId is required</p>
+                        </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-12">
+                  <div class="form-group">
+                    <div class="input-box">
+                      <input type="text" formControlName="phone" name="form_phone" value="" id="formPhone"
+                        placeholder="Phone*">
+                      <span *ngIf="!contactForm.controls['phone'].valid && contactForm.controls['phone']?.touched">
+                        <p class="text-danger">Phone is required</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-12">
+                  <div class="form-group">
+                    <div class="input-box">
+                      <input type="text" formControlName="subject" name="form_subject" value="" id="formSubject"
+                        placeholder="Subject*">
+                        <span *ngIf="!contactForm.controls['subject'].valid && contactForm.controls['subject']?.touched">
+                          <p class="text-danger">Subject is required</p>
+                        </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-12">
+                  <div class="form-group">
+                    <div class="input-box">
+                      <textarea name="form_message" formControlName="message" id="formMessage"
+                        placeholder="Write a Message*" required=""></textarea>
+                        <span *ngIf="!contactForm.controls['message'].valid && contactForm.controls['message']?.touched">
+                          <p class="text-danger">Message is required</p>
+                        </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-12">
+                  <div class="button-box">
+                    <!-- <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value=""> -->
+                    <button class="btn-one" type="submit" [disabled]="contactForm.invalid" data-loading-text="Please wait...">
+                      <span class="txt">send a message<i class="icon-refresh arrow"></i></span>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container mt-5">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12">
+
+          <div class="text-box1">
+            <h2>List of Godowns/ Warehouses as Collection Centers:</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Sl No.</th>
+                  <th scope="col">State</th>
+                  <th scope="col">City</th>
+                  <th scope="col">Address</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>New Delhi</td>
+                  <td>New Delhi</td>
+                  <td>Plot No. 619, Block A, Near Tata Telco Service Station, Rangpuri, Mahipalpur, New Delhi - 110037
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Haryana</td>
+                  <td>Gurgaon</td>
+                  <td>J-171, New Palam Vihar Phase - 1, Gurgaon, Gurugram, Haryana - 122017</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Uttar Pradesh</td>
+                  <td>Noida</td>
+                  <td>Bh-122, Sector-70, Noida, Uttar Pradesh - 201301</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Maharashtra</td>
+                  <td>Mumbai</td>
+                  <td>Plot no 92, Ground Floor, Gala/Shop No 1, Behind APMC Police Station, Next to Shell Inn Lodge,
+                    APMC Market - I, Sector 19c, Vashi, Navi Mumbai - 400703</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Maharashtra</td>
+                  <td>Pune</td>
+                  <td>Ploat No-24,Sec No-4,Shikshak Colony, Near Spine City, Moshi Pradhikaran, Pune-412105</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Telangana</td>
+                  <td>Hyderabad</td>
+                  <td>Plot No. 111, Near Om Sai Nilayam Apartment, Quthbullapum, Near Suchitra, Bhagya Lakhmi Colony,
+                    Road No. 4, Jeedimetla, Hyderabad, Telangana-500055</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Karnataka</td>
+                  <td>Bengaluru</td>
+                  <td>BhasNo.43 1st floor 2nd Main D.D.U.T.T.L. Yeshwantpur Bangalore-560022dfg</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Karnataka</td>
+                  <td>Mangaluru</td>
+                  <td>Opp.Hindustan Lzever Ltd, Sulthan Bhathery Road Boloor Mangalore-575003</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Tamilnadu</td>
+                  <td>Chennai</td>
+                  <td>3/27 Sakthi Garden Phase II, Senneerkuppam, Poonamallee, Near Bisleri Water Plant Chennai-600056
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Rajasthan</td>
+                  <td>Jaipur</td>
+                  <td>81, 200 ft. By Pass, Near Ajmer Road, Heerapura, Jaipur - 302021</td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>Chattisghar</td>
+                  <td>Raipur</td>
+                  <td>Mig 7Ring Road No-2 Kabir Nagar Raipur</td>
+                </tr>
+                <tr>
+                  <th scope="row">12</th>
+                  <td>Assam</td>
+                  <td>Guwahati</td>
+                  <td>HN-34, Kundil Nagar Basistha Chariali, Near Parbhat Apartment Guwahati-781029</td>
+                </tr>
+                <tr>
+                  <th scope="row">13</th>
+                  <td>Uttar Pradesh</td>
+                  <td>Lucknow</td>
+                  <td>S-317, Transport Nagar, Near RTO Office Lucknow, Uttar Pradesh 226012</td>
+                </tr>
+                <tr>
+                  <th scope="row">14</th>
+                  <td>Madhyapradesh</td>
+                  <td>Indore</td>
+                  <td>284 AS-3 Scheme No.-78,vijay nagar Indore(MP)</td>
+                </tr>
+                <tr>
+                  <th scope="row">15</th>
+                  <td>Gujarat</td>
+                  <td>Ahmedabad</td>
+                  <td>23, Shivalik Residency, B/h Kadmavala Textiles, Near Mony Hotel, Isanpur Ahmedabad</td>
+                </tr>
+                <tr>
+                  <th scope="row">16</th>
+                  <td>Bihar</td>
+                  <td>Patna</td>
+                  <td>PATNA Dr. A K Pandey (IPS) Malyanil, Buddha Colony, Patna, Bihar-800001</td>
+                </tr>
+                <tr>
+                  <th scope="row">17</th>
+                  <td>Andhra Pradesh</td>
+                  <td>Vishakapatnam</td>
+                  <td>Shop No.5, New Gajuwaka, Opp. High School Road, Vishakapatnam, Andhra Pradesh-530026</td>
+                </tr>
+                <tr>
+                  <th scope="row">18</th>
+                  <td>West Bengal</td>
+                  <td>Kolkata</td>
+                  <td>104 B T Road, Shed No. - 15/3, R I C I E, Block - 2 Near locknath mandir Bonhooghly Kolkata 700108
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">19</th>
+                  <td>Jharkand</td>
+                  <td>Jamshedpur</td>
+                  <td>Near Howrah Bridge New Kalimatiroad Sakchi JAMSHEDPUR -831001</td>
+                </tr>
+                <tr>
+                  <th scope="row">20</th>
+                  <td>Maharashtra</td>
+                  <td>Nagpur</td>
+                  <td>Shop-3 Kachore Complex Amrawati Road Waddhamna Nagpur - 440023</td>
+                </tr>
+                <tr>
+                  <th scope="row">21</th>
+                  <td>Orissa</td>
+                  <td>Bhubaneshwar</td>
+                  <td>1st Floor Deltahouse Rajendra Nager Madhupatna Cuttack , Bhuwaneshwar</td>
+                </tr>
+                <tr>
+                  <th scope="row">22</th>
+                  <td>Punjab</td>
+                  <td>Chandigarh</td>
+                  <td>Shop-13, Gudev Nagar, Bhabat Road Zirakpur Chandigarh, Punjab- 140603</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+  <!--End Main Contact Form Area-->
+
+  
+        <!--Start Google Map Style1 Area-->
+        <section class="google-map-style1-area">
+          <div class="auto-container">
+              <div class="home1-page-map-outer">
+                  <!--Map Canvas-->
+                  <div class="map-canvas" data-icon-path="assets/images/icon/map-marker.png">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497291.0245338598!2d76.96341393349945!3d13.156966976091109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae2974b84de649%3A0x552ec52526698301!2sTerranova%20Eco%20Management%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1676985657559!5m2!1sen!2sin"
+                      allowfullscreen=true width="100%" height="675px" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!--End Google Map Style1 Area-->
+
+</div>

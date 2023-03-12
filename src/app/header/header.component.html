@@ -1,0 +1,354 @@
+<!-- Main header-->
+<header class="main-header header-style-one" [ngClass]="mobile">
+
+  <!--Start Header Top-->
+  <div class="header-top">
+    <div class="auto-container">
+      <div class="outer-box">
+        <div class="header-top__left">
+          <div class="header-contact-info-style1">
+            <ul>
+              <li [routerLink]="['/contact']">
+                <div class="icon">
+                  <span class="icon-pin"></span>
+                </div>
+                <div class="text">
+                  <p>Nelamangala- 562123, Bangalore, Karnataka</p>
+                </div>
+              </li>
+              <li [routerLink]="['/contact']">
+                <div class="icon">
+                  <span class="icon-pin"></span>
+                </div>
+                <div class="text">
+                  <p>Gerupalya, Kumbalagodu, Bengaluru, 560074</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon">
+                  <span class="icon-email"></span>
+                </div>
+                <div class="text">
+                  <p><a href="mailto:info@terranova-eco.com">info@terranova-eco.com</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header-top__right">
+          <div class="header-button-style1">
+            <!-- <a class="btn-one" href="mailto:info@terranova-eco.com"> -->
+            <a class="btn-one" [routerLink]="['/request-pickup']">
+              <span class="txt">
+                Request for a pickup
+                <i class="icon-refresh arrow"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--End Header Top-->
+
+  <!--Start Header-->
+  <div class="header">
+    <div class="auto-container">
+      <div class="outer-box">
+
+        <!--Start Header Left-->
+        <div class="header-left">
+          <div class="main-logo-box" style="background-color: #ffffff;">
+            <a routerLink="/home">
+              <img src="assets/images/resources/color_logo_trans.png" alt="Awesome Logo" title="">
+            </a>
+          </div>
+          <div class="header-social-link">
+            <ul class="clearfix">
+              <li>
+                <i class="icon-twitter"></i>
+              </li>
+              <li>
+                <i class="icon-facebook"></i>
+              </li>
+              <li>
+                <i class="icon-pinterest"></i>
+              </li>
+              <li>
+                <i class="icon-instagram"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--End Header Left-->
+
+        <!--Start Header Middle-->
+        <div class="header-middle">
+          <div class="nav-outer style1 clearfix">
+            <!--Mobile Navigation Toggler-->
+            <div class="mobile-nav-toggler" (click)="onClick()">
+              <div class="inner">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </div>
+            </div>
+            <!-- Main Menu -->
+            <nav class="main-menu style1 navbar-expand-md navbar-light">
+              <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                <ul class="navigation clearfix">
+                  <li class="dropdown"><a [routerLink]="['/home']"
+                      [routerLinkActive]="['current']"><span>Home</span></a>
+                  </li>
+                  <li>
+                    <a [routerLink]="['/about']" [routerLinkActive]="['current']"><span>About Us</span></a>
+                  </li>
+                  <li class="dropdown">
+                    <a [routerLink]="['/service']" [routerLinkActive]="['current']"><span>Services</span></a>
+                    <ul>
+                      <li><a [routerLink]="['/service']">E-waste Recycling</a></li>
+                      <li><a [routerLink]="['/service']">Battery Recycling</a></li>
+                      <li><a [routerLink]="['/service']">Precious Metal Recovery</a></li>
+                      <li><a [routerLink]="['/service']">Plastic Recycling</a></li>
+                      <li><a [routerLink]="['/service']">Telecom Site Tower Operations</a></li>
+                      <li><a [routerLink]="['/service']">Metal Recycling</a></li>
+
+                    </ul>
+                  </li>
+                  <!-- <li>
+                    <a [routerLink]="['/csr']" [routerLinkActive]="['current']"><span>CSR</span></a>
+                  </li> -->
+                  <!-- <li>
+                    <a [routerLink]="['/news']" [routerLinkActive]="['current']"><span>News</span></a>
+                  </li> -->
+                  <li class="dropdown">
+                    <a [routerLink]="['/collection-centers']" [routerLinkActive]="['current']"><span>EPR</span></a>
+                    <ul>
+                      <li><a [routerLink]="['/collection-centers']">Collection
+                          Centers</a></li>
+                      <li><a [routerLink]="['/logistic-partner']">Logistic partners
+                        </a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a [routerLink]="['/contact']" [routerLinkActive]="['current']"><span>Contact Us</span></a>
+                  </li>
+                  <!-- <li>
+                    <a [routerLink]="['/collection-centers']" [routerLinkActive]="['current']"><span>Collection
+                        Centers</span></a>
+                  </li> -->
+
+                </ul>
+              </div>
+            </nav>
+            <!-- Main Menu End-->
+          </div>
+        </div>
+        <!--End Header Middle-->
+
+        <!--Start Header Right-->
+        <div class="header-right">
+          <div class="phone-number-box1">
+            <div class="icon">
+              <span class="icon-phone-ringing"></span>
+            </div>
+            <div class="phone">
+              <p>Have any questions?</p>
+              <a href="tel:18003093201">18003093201</a>
+            </div>
+          </div>
+        </div>
+        <!--End Header Right-->
+      </div>
+    </div>
+  </div>
+  <!--End header-->
+
+  <!--Sticky Header-->
+  <div class="sticky-header">
+    <div class="container">
+      <div class="clearfix">
+        <!--Logo-->
+        <div class="logo float-left">
+          <a routerLink="/home" class="img-responsive">
+            <img src="assets/images/resources/sticky_color_logo_trans.png" alt="" title="">
+          </a>
+        </div>
+        <!--Right Col-->
+        <div class="right-col float-right">
+          <!-- Main Menu -->
+
+          <nav class="main-menu-other clearfix">
+            <div id="navbarSupportedContent" class="collapse navbar-collapse show clearfix">
+              <ul class="navigation clearfix">
+                <li class="dropdown"><a [routerLink]="['/home']" (click)="goTop()"
+                    [routerLinkActive]="['current']"><span>Home</span></a>
+                </li>
+                <li>
+                  <a [routerLink]="['/about']" (click)="goTop()" [routerLinkActive]="['current']"><span>About
+                      Us</span></a>
+                </li>
+                <li class="dropdown">
+                  <a [routerLink]="['/service']" (click)="goTop()"
+                    [routerLinkActive]="['current']"><span>Services</span></a>
+                  <ul>
+                    <li><a [routerLink]="['/service']" (click)="goTop()">E-waste Recycling</a></li>
+                    <li><a [routerLink]="['/service']" (click)="goTop()">Battery Recycling</a></li>
+                    <li><a [routerLink]="['/service']" (click)="goTop()">Precious Metal Recovery</a></li>
+                    <li><a [routerLink]="['/service']" (click)="goTop()">Plastic Recycling</a></li>
+                    <li><a [routerLink]="['/service']" (click)="goTop()">Telecom Site Tower Operations</a></li>
+                    <li><a [routerLink]="['/service']" (click)="goTop()">Metal Recycling</a></li>
+
+                  </ul>
+                </li>
+                <!-- <li>
+                  <a [routerLink]="['/csr']" (click)="goTop()" [routerLinkActive]="['current']"><span>CSR</span></a>
+                </li>
+                <li>
+                  <a [routerLink]="['/news']" (click)="goTop()" [routerLinkActive]="['current']"><span>News</span></a>
+                </li> -->
+                <!-- <li>
+                  <a [routerLink]="['/collection-centers']" [routerLinkActive]="['current']"><span>Collection
+                    Centers</span></a>
+                  </li> -->
+                <li class="dropdown">
+                  <a [routerLink]="['/collection-centers']" [routerLinkActive]="['current']"><span>EPR</span></a>
+                  <ul>
+                    <li><a [routerLink]="['/collection-centers']">Collection
+                        Centers</a></li>
+                    <li><a [routerLink]="['/logistic-partner']">Logistic partners
+                      </a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a [routerLink]="['/contact']" (click)="goTop()" [routerLinkActive]="['current']"><span>Contact
+                      Us</span></a>
+                </li>
+              </ul>
+            </div>
+            <!--Keep This Empty / Menu will come through Javascript-->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Sticky Header-->
+
+  <!-- Mobile Menu  -->
+  <div class="mobile-menu mobile-menu-visible">
+    <div class="menu-backdrop"></div>
+    <div class="close-btn" (click)="goTop()"><span class="icon fa fa-times-circle"></span></div>
+    <nav class="menu-box">
+      <div class="nav-logo"><a routerLink="/home"><img src="assets/images/resources/color_logo_trans.png" alt=""
+            title=""></a></div>
+      <div class="menu-outer">
+        <div class="collapse navbar-collapse show clearfix">
+          <ul class="navigation clearfix">
+
+
+
+            <li><a class="close-btn1" [routerLink]="['/home']" (click)="goTop()"
+                [routerLinkActive]="['current']"><span>Home</span></a>
+            </li>
+            <li>
+              <a class="close-btn1" [routerLink]="['/about']" (click)="goTop()"
+                [routerLinkActive]="['current']"><span>About Us</span></a>
+            </li>
+            <li class="dropdown" (click)="onDropdown()">
+              <a class="close-btn1">
+                <span>Services</span>
+              </a>
+              <ul [ngStyle]="{'display': dropdown === false ? 'block' : 'none'}">
+                <li><a class="close-btn1" [routerLink]="['/service']" (click)="goTop()">E-waste Recycling</a></li>
+                <li><a class="close-btn1" [routerLink]="['/service']" (click)="goTop()">Battery Recycling</a></li>
+                <li><a class="close-btn1" [routerLink]="['/service']" (click)="goTop()">Precious Metal Recovery</a></li>
+                <li><a class="close-btn1" [routerLink]="['/service']" (click)="goTop()">Plastic Recycling</a></li>
+                <li><a class="close-btn1" [routerLink]="['/service']" (click)="goTop()">Telecom Site Tower
+                    Operations</a></li>
+                <li><a class="close-btn1" [routerLink]="['/service']" (click)="goTop()">Metal Recycling</a></li>
+
+              </ul>
+            </li>
+            <!-- <li>
+              <a class="close-btn1" [routerLink]="['/csr']" (click)="goTop()" [routerLinkActive]="['current']"><span>CSR</span></a>
+            </li> -->
+            <!-- <li>
+              <a class="close-btn1" [routerLink]="['/news']" (click)="goTop()" [routerLinkActive]="['current']"><span>News</span></a>
+            </li> -->
+            <!-- <li>
+              <a class="close-btn1" [routerLink]="['/collection-centers']" (click)="goTop()"
+              [routerLinkActive]="['current']"><span>Collection Centers</span></a>
+            </li> -->
+            <li class="dropdown">
+              <a [routerLink]="['/collection-centers']" [routerLinkActive]="['current']"><span>EPR</span></a>
+              <ul>
+                <li><a [routerLink]="['/collection-centers']" (click)="goTop()">Collection
+                  Centers</a></li>
+                <li><a [routerLink]="['/logistic-partner']" (click)="goTop()">Logistic partners
+                </a></li>
+              </ul>
+            </li>
+            
+            <li>
+              <a class="close-btn1" [routerLink]="['/contact']" (click)="goTop()"
+                [routerLinkActive]="['current']"><span>Contact Us</span></a>
+            </li>
+
+            <!--             
+            <li class="dropdown">
+              <a routerLink="/home">
+                <span>Home</span>
+              </a>
+              <ul style="display: none;">
+                <li>
+                  <a class="close-btn1" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+                </li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+      </div>
+      <!--Social Links-->
+      <div class="social-links">
+        <ul class="clearfix">
+          <li><a><span class="fab fa fa-facebook-square"></span></a></li>
+          <li><a><span class="fab fa fa-twitter-square"></span></a></li>
+          <li><a><span class="fab fa fa-pinterest-square"></span></a></li>
+          <li><a><span class="fab fa fa-google-plus-square"></span></a></li>
+          <li><a><span class="fab fa fa-youtube-square"></span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- End Mobile Menu -->
+
+  <!-- search-popup -->
+  <div id="search-popup" class="search-popup">
+    <div class="close-search"><i class="icon-close"></i></div>
+    <div class="popup-inner">
+      <div class="overlay-layer"></div>
+      <div class="search-form">
+        <form method="post" action="index.html">
+          <div class="form-group">
+            <fieldset>
+              <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required>
+              <input type="submit" value="Search Now!" class="theme-btn style-four">
+            </fieldset>
+          </div>
+        </form>
+        <h3>Recent Search Keywords</h3>
+        <ul class="recent-searches">
+          <li><a routerLink="/home">waste</a></li>
+          <li><a routerLink="/home">Dumpster</a></li>
+          <li><a routerLink="/home">Zerowaste</a></li>
+          <li><a routerLink="/home">Garbage</a></li>
+          <li><a routerLink="/home">trash</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- search-popup end -->
+</header>

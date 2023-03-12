@@ -1,0 +1,106 @@
+.rtl .accordion-box .block .acc-btn .icon-outer {
+    left: 30px;
+    right: auto;
+  }
+  
+
+  
+.accordion-box {
+    position: relative;
+    display: block;
+}
+
+.accordion-box .block {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    transition: all 500ms ease;
+}
+
+.accordion-box .block:last-child {
+    margin-bottom: 0px;
+}
+
+.accordion-box .block .acc-content.current {
+    display: block;
+}
+
+.accordion-box .block .acc-btn {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    transition: all 500ms ease;
+    background: #ebf1ed;
+    padding-top: 19px;
+    padding-left: 40px;
+    padding-bottom: 19px;
+    padding-right: 40px;
+    border: 1px solid #ebf1ed;
+}
+
+.accordion-box .block .acc-btn.active {
+    background: #ffffff;
+}
+
+.accordion-box .block .acc-btn h3 {
+    color: var(--thm-black);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    transition: all 500ms ease;
+}
+
+.accordion-box .block .acc-btn.active h3 {
+    color: var(--thm-base);
+}
+
+.accordion-box .block .acc-btn .icon-outer {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    width: 15px;
+    height: 15px;
+    color: var(--thm-base);
+    font-size: 12px;
+    text-align: right;
+    line-height: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transform: translateY(-50%) rotate(0deg);
+    transition: all 500ms ease;
+    z-index: 1;
+}
+
+.accordion-box .block .acc-btn.active .icon-outer {
+    color: var(--thm-primary);
+    transform: translateY(-50%) rotate(360deg);
+}
+
+.accordion-box .block .acc-btn .icon-outer i:before {
+    font-weight: 700;
+}
+
+.accordion-box .block .acc-btn.active .icon-outer i:before {
+    position: relative;
+    font-size: 12px;
+    font-family: 'icomoon' !important;
+    font-weight: 700;
+    margin: 0px;
+    content: "\e928";
+}
+
+.accordion-box .block .acc-content {
+    position: relative;
+    display: none;
+    padding-top: 31px;
+    padding-left: 40px;
+    padding-bottom: 28px;
+    padding-right: 30px;
+    border: 1px solid #ebf1ed;
+    border-top: none;
+}
+
+.accordion-box .block .acc-content p {
+    margin: 0;
+}
+

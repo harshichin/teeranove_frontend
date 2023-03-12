@@ -1,0 +1,877 @@
+<div class="boxed_wrapper ltr">
+  <!--Start breadcrumb area paroller-->
+  <section class="breadcrumb-area">
+    <div class="breadcrumb-area-bg" style="background-image: url(assets/images/breadcrumb/breadcrumb-1.jpg);">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="inner-content">
+            <div class="breadcrumb-menu" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+              <ul>
+                <li><a routerLink="/home">Home</a></li>
+                <li class="active">Our Services</li>
+              </ul>
+            </div>
+
+            <div class="title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+              <h2>Our Services</h2>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End breadcrumb area-->
+
+
+  <section class="service-details-area">
+    <div class="container">
+      <div class="row">
+        <!--Start Service Details Sidebar -->
+        <div class="col-xl-4 col-lg-5 order-box-2">
+          <div class="service-details__sidebar">
+            <div class="view-all-service">
+              <ul class="service-pages">
+                <li [ngClass]="{'active': selectedService === 1}" (click)=onSelect(1)>
+                  <a style="cursor: pointer;">
+                    E-waste Recycling <span class="icon-right-arrow"></span>
+                  </a>
+                </li>
+                <li [ngClass]="{'active': selectedService === 2}" (click)=onSelect(2)>
+                  <a style="cursor: pointer;">
+                    Battery Recycling <span class="icon-right-arrow"></span>
+                  </a>
+                </li>
+                <li [ngClass]="{'active': selectedService === 3}" (click)=onSelect(3)>
+                  <a style="cursor: pointer;">
+                    Precious Metal Recovery <span class="icon-right-arrow"></span>
+                  </a>
+                </li>
+                <li [ngClass]="{'active': selectedService === 4}" (click)=onSelect(4)>
+                  <a style="cursor: pointer;">
+                    Plastic Recycling <span class="icon-right-arrow"></span>
+                  </a>
+                </li>
+                <li [ngClass]="{'active': selectedService === 5}" (click)=onSelect(5)>
+                  <a style="cursor: pointer;">
+                    Telecom Site Tower Operations <span class="icon-right-arrow"></span>
+                  </a>
+                </li>
+                <li [ngClass]="{'active': selectedService === 6}" (click)=onSelect(6)>
+                  <a style="cursor: pointer;">
+                    Metal Recycling <span class="icon-right-arrow"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="service-details-contact-info text-center">
+              <div class="top-box">
+                <div class="icon">
+                  <span class="icon-phone-ringing"></span>
+                </div>
+                <h2>Commercial <br> Waste Services <br>in your Area</h2>
+              </div>
+
+              <div class="bottom-box">
+                <p>Need help? <br>Talk to an expert</p>
+                <h2><a href="tel:18003093201">+18003093201</a></h2>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--End Service Details Sidebar -->
+
+
+        <!--Start Service Details Content -->
+        <div class="col-xl-8 col-lg-7 order-box-1" *ngIf="selectedService == 1">
+          <span>
+            <div class="service-details__content">
+              <div class="img-box1">
+                <img src="assets/images/services/E-waste_Recycling.png" alt="E-waste_Recycling" />
+              </div>
+
+              <div class="text-box1">
+                <h2>E-waste Recycling & Data Destruction/Wiping</h2>
+                <p>IT Asset Disposition (ITAD) is the process of securely and responsibly reusing or recycling of
+                  electronic assets which are no longer needed or no longer in service.
+                  <br>
+                  Data security, information privacy, and environmental protection must all be addressed to safeguard an
+                  organization’s reputation and prevent costly fines. ITAD providers, at a minimum, should meet critical
+                  requirements for:
+
+                </p>
+              </div>
+              <!-- <div class="text-box4">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="content-box">
+                      <ul>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Data Security</h4>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Environmental Protection</h4>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span> Traceability</h4>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Compliance</h4>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Redeployment</h4>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Remarketing</h4>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Recycling</h4>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Circular Economy</h4>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+
+              <div class="text-box2">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4>
+                        <span class="icon-check-mark-button"></span> Data Security
+                      </h4>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Environmental Protection
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Traceability
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Compliance
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Redeployment
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Remarketing
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Recycling
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Circular Economy
+                      </h4>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="text-box3">
+                <p>We are able to process both data-bearing and non-data bearing assets for your organization while
+                  ensuring 100% data destruction and reducing environmental impact, all while maximizing asset recovery
+                  value.
+
+                </p>
+                <p>Terranova-Eco provides an end-to-end program to manage the complete disposition of retired Electronic
+                  & IT assets, ensuring 100% data destruction, maximizing asset value recovery, minimizing penalty
+                  charges & fines, ensuring complete regulatory compliance, and meeting or surpassing all corporate risk
+                  management requirements. Examples of some of the devices include:
+                </p>
+              </div>
+              <div class="text-box4">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="content-box">
+                      <ul>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Data Centers</h4>
+                          <p>Servers, Routers, Switches </p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span> Productivity Devices</h4>
+                          <p>Computers, Tablets, Laptops, and Phones</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Office Equipment</h4>
+                          <p>Printers, Postage Meters, Phone Systems </p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Video Display Devices</h4>
+                          <p>Televisions and Monitors </p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Specialty Devices</h4>
+                          <p>Gaming/Slot Machines, Medical Equipment, Government Equipment, Solar Panels</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>POS Devices</h4>
+                          <p>Registers, Scanners, Self-Checkout, ATMs</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Consumer Electronics</h4>
+                          <p>Battery-powered Toys, Handheld Games, Smart Watches </p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Industrial Electronics</h4>
+                          <p>Instrumentation and Control Devices, Lab Equipment, Metering </p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>General Electrical and Electronics Scrap</h4>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-style1__content">
+                <ul class="accordion-box">
+                  <li class="accordion block active-block">
+                    <div class="acc-btn active">
+                      <div class="icon-outer">
+                        <i class="icon-arrow-down"></i>
+                      </div>
+                      <h3>Nearly Any Device With A Cord or Battery</h3>
+                    </div>
+                    <div class="acc-content current">
+                      <p>Companies are required to ensure data is properly destroyed and are challenged by ever-changing
+                        privacy laws. Terranova-Eco helps companies navigate all of these regulatory issues to ensure
+                        100% compliance and avoid hefty fines and negative publicity.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </span>
+        </div>
+        <!-- -------------------------------------22222-------------------- -->
+        <div class="col-xl-8 col-lg-7 order-box-1" *ngIf="selectedService == 2">
+          <span>
+            <div class="service-details__content">
+              <div class="img-box1">
+                <img src="assets/images/services/Battery_Recycling.jpg" alt="Battery_Recycling" />
+              </div>
+
+              <div class="text-box1">
+                <h2>Battery Recycling</h2>
+                <p>Terranova-Eco has been responsibly recycling used and spent lead Acidd and Lithium Ion batteries that
+                  our nation disposes off each year. Instead of filling landfills, our recycling industry turns
+                  discarded lead battery components into highly valuable, raw materials for new products, and treating
+                  hazardous waste.
+                </p>
+              </div>
+
+              <div class="text-box3">
+                <p>It has survived not only five centuries. Lorem Ipsum is simply dummy text of the new
+                  design printing and type setting Ipsum take a look at our round. When an unknown
+                  printer took a galley of type and scrambled it to make a type specimen book. It has
+                  survived not only five centuries, but also the leap into electronic typesetting.</p>
+              </div>
+
+              <div class="text-box4">
+                <div class="row">
+
+                  <div class="col-xl-12">
+                    <div class="content-box">
+                      <h2>The benefits of battery recycling include</h2>
+                      <ul>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Conservation of natural resources</h4>
+                          <p>The recycling of batteries conserves valuable raw materials and reduces the need for mining
+                            new resources.</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Reduction of pollution</h4>
+                          <p>The production of new batteries generates significant pollution, and battery recycling
+                            helps to reduce this environmental impact.</p>
+                        </li>
+
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Energy savings</h4>
+                          <p>The production of new batteries requires large amounts of energy, while recycling used
+                            batteries consumes less energy and is therefore more efficient.</p>
+                        </li>
+
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Cost savings</h4>
+                          <p>Battery recycling is often more cost-effective than extracting new raw materials and
+                            producing new batteries.</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Reduction of waste</h4>
+                          <p>Recycling used batteries helps to reduce the amount of hazardous waste in landfills</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Support for sustainable development</h4>
+                          <p>Battery recycling supports the goal of sustainable development by reducing the use of
+                            finite resources and minimizing waste.</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Creation of jobs</h4>
+                          <p>The battery recycling industry creates jobs in collection, transportation, processing, and
+                            manufacturing.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-box4">
+                <div class="row">
+                  <!-- <div class="col-xl-6">
+                    <div class="img-box">
+                      <img src="assets/images/services/service-details-img2.jpg" alt="" />
+                    </div>
+                  </div> -->
+
+                  <div class="col-xl-12">
+                    <div class="content-box">
+                      <h2>Process of Battery Recycling:</h2>
+                      <ul>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Collection</h4>
+                          <p>Used batteries are collected from individuals, businesses, and industries.</p>
+                        </li>
+
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Sorting</h4>
+                          <p>Batteries are sorted by chemistry, size, and condition.</p>
+                        </li>
+
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Processing</h4>
+                          <p>The recycler breaks down the battery components in a vat, extracting the lead and
+                            electrolytes.</p>
+                        </li>
+
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Smelting</h4>
+                          <p>Lead and plastic are melted and formed into new batteries.</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Final disposal</h4>
+                          <p>Non-recoverable materials are safely disposed of.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="text-box4">
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="content-box">
+                      <h2>Types of batteries that can be recycled:</h2>
+                      <ul>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Lead-acid batteries</h4>
+                          <p>Used in vehicles, emergency lighting, and backup power supplies.</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Nickel-cadmium batteries</h4>
+                          <p>Used in portable electronic devices, power tools, and emergency lighting.</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Lithium-ion batteries</h4>
+                          <p>Used in laptops, cell phones, and electric vehicles.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </span>
+        </div>
+
+
+
+
+        <!-- -------------------------------------3333333333333333333333333-------------------- -->
+        <div class="col-xl-8 col-lg-7 order-box-1" *ngIf="selectedService == 3">
+          <span>
+            <div class="service-details__content">
+              <div class="img-box1">
+                <img src="assets/images/services/Precious_Metal_Recovery.jpg" alt="" />
+              </div>
+
+              <div class="text-box1">
+                <h2>Precious Metal Recovery</h2>
+                <p>Terranova-Eco refines precious metals from the products and byproducts of the pharmaceutical,
+                  petroleum, petrochemical, chemical, electronics, fuel cell and numerous other industries. With
+                  best-in-class techniques and over decades of experience, we deliver the highest possible returns for
+                  our customers.
+                  <br>
+                  Accurate sampling is the most important step in the refining process. That’s why we dedicate so much
+                  time and attention to getting it right. We tailor our methods specifically to your material and the
+                  precious metals it holds. We use rigorous pretreating and dry, melt or solution sampling techniques to
+                  generate a series of analytical samples. And we test across them to ensure we have a complete and
+                  homogeneous representation of all of your material. So you can be confident that every ounce of your
+                  precious metal is accounted for.
+                  <br>
+                  To minimize material loss, our integrated collection systems capture dust particles and return them
+                  back to your material balance. It helps to ensure that each sample is a complete and accurate
+                  representation of all of your material.
+
+                </p>
+              </div>
+              <div class="text-box4">
+                <div class="row">
+
+                  <div class="col-xl-12">
+                    <div class="content-box">
+                      <h2>Benefits of Precious Metal Recovery</h2>
+                      <ul>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Environment protection</h4>
+                          <p>reduces the amount of waste and pollution in the environment.</p>
+                        </li>
+
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Resource conservation</h4>
+                          <p>Conserves finite resources and reduces dependence on mining and extraction.</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Increased revenue</h4>
+                          <p>Generates revenue through the sale of recovered metals.</p>
+                        </li>
+
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Reduced mining impacts</h4>
+                          <p>Reduces the environmental impact of mining and extraction of new metals.</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Energy savings</h4>
+                          <p>Requires less energy to process recovered metals than to extract new metals from ore.</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Better resource utilization</h4>
+                          <p>Increases the efficient use of resources and decreases waste.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-box4">
+                <div class="row">
+                  <!-- <div class="col-xl-6">
+                    <div class="img-box">
+                      <img src="assets/images/services/service-details-img2.jpg" alt="" />
+                    </div>
+                  </div> -->
+
+                  <div class="col-xl-12">
+                    <div class="content-box">
+                      <h2>Types of Precious Metal Recovery</h2>
+                      <ul>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Physical recovery</h4>
+                          <p>Involves separating and refining metals through physical methods such as gravity
+                            separation, flotation, and magnetic separation.</p>
+                        </li>
+
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Chemical recovery</h4>
+                          <p>Involves using chemical processes to extract and purify metals, such as leaching, smelting,
+                            and electrorefining.</p>
+                        </li>
+
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Biological recovery</h4>
+                          <p>Uses microorganisms to extract and recover metals from ores and waste streams.</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Hydrometallurgical recovery</h4>
+                          <p>Uses aqueous solutions to extract and purify metals from ores and waste streams.</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Pyrometallurgical recovery</h4>
+                          <p>Uses high-temperature processes to extract and purify metals from ores and waste streams.
+                          </p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Electronic waste recovery</h4>
+                          <p>Involves recovering precious metals from electronic waste such as discarded computers, cell
+                            phones, and other electronic devices.</p>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Scrap metal recovery</h4>
+                          <p>Involves recovering precious metals from scrap metal and other recycled materials.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+
+
+
+
+        <!-- -------------------------------------44444444444444444444444444444-------------------- -->
+        <div class="col-xl-8 col-lg-7 order-box-1" *ngIf="selectedService == 4">
+          <span>
+            <div class="service-details__content">
+              <div class="img-box1">
+                <img src="assets/images/services/Plastic_Recycling.jpg" alt="" />
+              </div>
+
+              <div class="text-box1">
+                <h2>Plastic Recycling</h2>
+                <p>Plastic – an indispensable material that shapes the future. But all too often, plastic products
+                  become waste at the end of their lives. This needs to change. After all, used plastic or plastic waste
+                  is not necessarily waste, but often a valuable source of raw materials. In order to achieve a truly
+                  sustainable future and protect our environment in the long run, our attitude towards consumption and
+                  understanding of plastic waste – and waste as a whole – must change.
+                  <br>
+                  As we develop these new plastic recycling technologies, we are paying particular attention to energy
+                  efficiency. This way, we reduce the carbon footprint of our products and make our business more
+                  sustainable.
+                </p>
+              </div>
+              <div class="text-box4">
+                <div class="row">
+
+                  <div class="col-xl-12">
+                    <div class="content-box">
+                      <h2>Ways we recycle plastic</h2>
+                      <ul>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Plastic waste materials are recycled into new raw
+                            materials without changing the base structure of the material. For example, after sorting
+                            and processing, plastic is crushed into granulate. </h4>
+                        </li>
+
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Chemically splitting of plastics into individual
+                            building blocks (monomers) by chemical processes. Solvents, catalysts, heat or pressure are
+                            used.</h4>
+                        </li>
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Breaking down plastics into individual building
+                            blocks (monomers) by heating in the absence of oxygen.</h4>
+                        </li>
+
+                        <li>
+                          <h4><span class="icon-arrow-right"></span>Splitting plastics into individual building
+                            blocks (monomers) with the help of enzymes at moderate temperatures.</h4>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+
+
+
+
+
+
+        <!-- -------------------------------------55555555555555555555555555555-------------------- -->
+        <div class="col-xl-8 col-lg-7 order-box-1" *ngIf="selectedService == 5">
+          <span>
+            <div class="service-details__content">
+              <div class="img-box1">
+                <img src="assets/images/services/telecom_site.jpg" alt="" />
+              </div>
+
+              <div class="text-box1">
+                <h2>Telecom Site Tower Operations</h2>
+                <p>Telecommunication technology has grown by leaps and bounds in the past decade. There are
+                  approximately 400,000 Telecom towers in India today. Latest technology built mobile towers have been
+                  installed frequently, causing a huge scrap. The older, damaged, broken or outdated mobile towers turn
+                  into a mass waste or scrap. The towers, masts and poles are made from aluminum, steel and stainless
+                  steel materials. Metals like aluminum or stainless steel can be recycled to produce new goods.
+                  <br>
+                  Terranova-Eco provides services to the save environment. Instead of trashing the waste, you can have
+                  our professional waste management services to dispose of mobile tower scraps securely.Our team of
+                  experts generate scrap metal from old mobile towers. We also collect scrap or debris after
+                  installations of cell towers.
+                  <br>
+                  For telecom waste management, we provide cost effective and high efficiency solutions. Our company is
+                  dedicated to provide compliant, secure and transparent services.
+
+                </p>
+              </div>
+            </div>
+          </span>
+        </div>
+
+
+
+
+        <!-- -------------------------------------66666666666666666666666-------------------- -->
+        <div class="col-xl-8 col-lg-7 order-box-1" *ngIf="selectedService == 6">
+          <span>
+            <div class="service-details__content">
+              <div class="img-box1">
+                <img src="assets/images/services/metal_recycling.jpg" alt="" />
+              </div>
+
+              <div class="text-box1">
+                <h2>Metal Recycling</h2>
+                <p>Metals can be recycled without altering and degrading their
+                  properties. Usually, there are two types
+                  of metals Ferrous and Non-Ferrous. The Ferrous metals consist of iron with carbon such as carbon
+                  steel, alloy steel, wrought iron and cast iron. Whereas, Non-Ferrous Metals are aluminum, copper, tin,
+                  lead, zinc, gold, platinum, silver, iridium, and palladium.
+
+
+                </p>
+              </div>
+              <div class="text-box2">
+                <!-- <div class="text-box3"> -->
+                <h4>Types of Metal Scrap We Recycle:</h4>
+                <!-- </div> -->
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4>
+                        <span class="icon-check-mark-button"></span>Insulated Copper Wire
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Sheet Aluminum
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Copper Tubing
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Light Iron
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Aluminum Cans
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Bare Bright Wire
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Electric Motors
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Scrap Cars
+                      </h4>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Plumbing Brass</h4>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Car Batteries</h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Sealed Units</h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Sealed Units</h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Stainless Steel</h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Computer Wire</h4>
+                    </div>
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="text-box2-single">
+                      <h4><span class="icon-check-mark-button"></span> Aluminum and Copper Radiators</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-box1">
+                <p>Metals are valuable materials and can be easily yet consecutively recycled without hampering its
+                  properties. Along with financial incentives or benefits, there is also an environmental imperative.
+                  Recycling of metal scraps help us to preserve natural resources and it also takes less energy to
+                  process than manufacturing new products from raw materials. By using eco-friendly yet innovative
+                  techniques, we recycle all types of Metal Scrap that helps to emit less carbon dioxide and other
+                  harmful gases in the environment. It also helps manufacturing businesses to minimize their production
+                  cost.
+                </p>
+              </div>
+            </div>
+          </span>
+        </div>
+        <!--End Service Details Content -->
+      </div>
+    </div>
+  </section>
+
+
+  <!--Start Service Style2 Area-->
+  <!-- <section class="service-style2-area">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="single-service-style2">
+            <div class="img-holder">
+              <img src="assets/images/services/service-v1-1.jpg" alt="">
+              <div class="icon-box">
+                <span class="icon-store"></span>
+              </div>
+            </div>
+            <div class="text-holder text-center">
+              <h3>Ewaste Recycling</h3>
+              <p>Sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="single-service-style2">
+            <div class="img-holder">
+              <img src="assets/images/services/service-v1-2.jpg" alt="">
+              <div class="icon-box">
+                <span class="icon-restaurant"></span>
+              </div>
+            </div>
+            <div class="text-holder text-center">
+              <h3>Battery Recycling</h3>
+              <p>Sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="single-service-style2">
+            <div class="img-holder">
+              <img src="assets/images/services/service-v1-3.jpg" alt="">
+              <div class="icon-box">
+                <span class="icon-stethoscope"></span>
+              </div>
+            </div>
+            <div class="text-holder text-center">
+              <h3>Precious Metal Recovery</h3>
+              <p>Sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="single-service-style2">
+            <div class="img-holder">
+              <img src="assets/images/services/service-v1-4.jpg" alt="">
+              <div class="icon-box">
+                <span class="icon-factory"></span>
+              </div>
+            </div>
+            <div class="text-holder text-center">
+              <h3>Data destruction/wiping services</h3>
+              <p>Sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="single-service-style2">
+            <div class="img-holder">
+              <img src="assets/images/services/service-v1-5.jpg" alt="">
+              <div class="icon-box">
+                <span class="icon-knowledge"></span>
+              </div>
+            </div>
+            <div class="text-holder text-center">
+              <h3>Telecom Towers Sites Operations</h3>
+              <p>Sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="single-service-style2">
+            <div class="img-holder">
+              <img src="assets/images/services/service-v1-6.jpg" alt="">
+              <div class="icon-box">
+                <span class="icon-desk"></span>
+              </div>
+            </div>
+            <div class="text-holder text-center">
+              <h3>Office & Retails</h3>
+              <p>Sed quia magni dolores eos qui ratione voluptatem sequi nesciunt eque porro.</p>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </section> -->
+  <!--End Service Style2 Area-->
+</div>
